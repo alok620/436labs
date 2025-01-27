@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "GraduationRSVP"
 include(":app")
+include(":pizzaparty")

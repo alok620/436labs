@@ -12,7 +12,7 @@ pluginManagement {
     }
 }
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.PREFER_PROJECT)
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
@@ -22,4 +22,3 @@ dependencyResolutionManagement {
 rootProject.name = "GraduationRSVP"
 include(":app")
 include(":pizzaparty")
- 

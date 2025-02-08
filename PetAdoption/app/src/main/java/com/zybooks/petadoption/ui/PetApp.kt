@@ -36,6 +36,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.toRoute
 import com.zybooks.petadoption.data.Pet
 import com.zybooks.petadoption.data.PetDataSource
 import com.zybooks.petadoption.data.PetGender
@@ -43,20 +44,22 @@ import com.zybooks.petadoption.ui.theme.PetAdoptionTheme
 import kotlinx.serialization.Serializable
 
 sealed class Routes {
-   @kotlinx.serialization.Serializable
+   @Serializable
    data object List
 
-   @kotlinx.serialization.Serializable
-   data object Detail
+   @Serializable
+   data class Detail(
+      val petId: Int
+   )
 
    @Serializable
-   data object Adopt
+   data class Adopt(
+      val petId: Int
+   )
 }
 
 @Composable
-fun PetApp(
-   petViewModel: PetViewModel = viewModel()
-) {
+fun PetApp() {
    val navController = rememberNavController()
 
    NavHost(
@@ -65,27 +68,33 @@ fun PetApp(
    ) {
       composable<Routes.List> {
          ListScreen(
-            petList = petViewModel.petList,
             onImageClick = { pet ->
-               petViewModel.selectedPet = pet
-               navController.navigate(Routes.Detail)
+               navController.navigate(
+                  Routes.Detail(pet.id)
+               )
             }
          )
       }
-      composable<Routes.Detail> {
+      composable<Routes.Detail> { backstackEntry ->
+         val details: Routes.Detail = backstackEntry.toRoute()
+
          DetailScreen(
-            pet = petViewModel.selectedPet,
+            petId = details.petId,
             onAdoptClick = {
-               navController.navigate(Routes.Adopt)
+               navController.navigate(
+                  Routes.Adopt(details.petId)
+               )
             },
             onUpClick = {
                navController.navigateUp()
             }
          )
       }
-      composable<Routes.Adopt> {
+      composable<Routes.Adopt> { backstackEntry ->
+         val adopt: Routes.Adopt = backstackEntry.toRoute()
+
          AdoptScreen(
-            pet = petViewModel.selectedPet,
+            petId = adopt.petId,
             onUpClick = {
                navController.navigateUp()
             }
@@ -123,7 +132,7 @@ fun PetAppBar(
 fun PreviewListScreen() {
    PetAdoptionTheme {
       ListScreen(
-         petList = PetDataSource().loadPets(),
+         //petList = PetDataSource().loadPets(),
          onImageClick = { }
       )
    }
@@ -135,7 +144,7 @@ fun PreviewDetailScreen() {
    val pet = PetDataSource().loadPets()[0]
    PetAdoptionTheme {
       DetailScreen(
-         pet = pet,
+         petId = pet.id,
          onAdoptClick = { }
       )
    }
@@ -146,15 +155,16 @@ fun PreviewDetailScreen() {
 fun PreviewAdoptScreen() {
    val pet = PetDataSource().loadPets()[0]
    PetAdoptionTheme {
-      AdoptScreen(pet)
+      AdoptScreen(pet.id)
    }
 }
 
 @Composable
 fun ListScreen(
-   petList: List<Pet>,
+   //petList: List<Pet>,
    onImageClick: (Pet) -> Unit,
-   modifier: Modifier = Modifier
+   modifier: Modifier = Modifier,
+   viewModel: ListViewModel = viewModel()
 ) {
    Scaffold(
       topBar = {
@@ -168,7 +178,7 @@ fun ListScreen(
          contentPadding = PaddingValues(0.dp),
          modifier = modifier.padding(innerPadding)
       ) {
-         items(petList) { pet ->
+         items(viewModel.petList) { pet ->
             Image(
                painter = painterResource(id = pet.imageId),
                contentDescription = "${pet.type} ${pet.gender}",
@@ -184,11 +194,13 @@ fun ListScreen(
 
 @Composable
 fun DetailScreen(
-   pet: Pet,
+   petId: Int,
    onAdoptClick: () -> Unit,
    modifier: Modifier = Modifier,
+   viewModel: DetailViewModel = viewModel(),
    onUpClick: () -> Unit = { }
 ) {
+   val pet = viewModel.getPet(petId)
    val gender = if (pet.gender == PetGender.MALE) "Male" else "Female"
 
    Scaffold(
@@ -244,10 +256,12 @@ fun DetailScreen(
 
 @Composable
 fun AdoptScreen(
-   pet: Pet,
+   petId: Int,
    modifier: Modifier = Modifier,
+   viewModel: AdoptViewModel = viewModel(),
    onUpClick: () -> Unit = { }
 ) {
+   val pet = viewModel.getPet(petId)
    Scaffold(
       topBar = {
          PetAppBar(

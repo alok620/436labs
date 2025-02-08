@@ -1,27 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AndroidLayouts">
-    <shared>
-      <config />
-    </shared>
-  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="597d4f69-ced2-4953-9dbc-ef161fdb1891" name="Changes" comment="initial commit pet">
-      <change beforePath="$PROJECT_DIR$/../.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/deploymentTargetSelector.xml" afterDir="false" />
+    <list default="true" id="2ac3904e-0961-44d0-a13a-988677b15045" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/.idea/deploymentTargetSelector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/.idea/migrations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/androidTest/java/com/zybooks/petadoption/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/ic_launcher-playstore.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/java/com/zybooks/petadoption/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/java/com/zybooks/petadoption/data/Pet.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/java/com/zybooks/petadoption/data/PetDataSource.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/java/com/zybooks/petadoption/ui/PetApp.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/java/com/zybooks/petadoption/ui/PetViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/java/com/zybooks/petadoption/ui/theme/Color.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/java/com/zybooks/petadoption/ui/theme/Theme.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/java/com/zybooks/petadoption/ui/theme/Type.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/drawable/pet1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/drawable/pet10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/drawable/pet11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/drawable/pet12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/drawable/pet13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/drawable/pet14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/drawable/pet15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/drawable/pet16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/drawable/pet17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/drawable/pet18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/drawable/pet2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/drawable/pet3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/drawable/pet4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/drawable/pet5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/drawable/pet6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/drawable/pet7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/drawable/pet8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/drawable/pet9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/values/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/values/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/app/src/test/java/com/zybooks/petadoption/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/gradle/libs.versions.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PetAdoption/settings.gradle.kts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="ChangesViewManager">
-    <option name="groupingKeys">
-      <option value="directory" />
-      <option value="module" />
-    </option>
   </component>
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
@@ -85,52 +145,114 @@
     &quot;accountId&quot;: &quot;15b2ce9e-1e50-4562-bb29-487f9f4e6296&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 8
 }</component>
-  <component name="ProjectId" id="2slBcXE9ShDsrl0UrkLm66Beo1F" />
+  <component name="ProjectId" id="2slGBEVsCzOZyRhRQd2kbiYCNVF" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Android App.app.executor": "Run",
+    "Android App.app.executor": "Android Profiler Group#1",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/stupi/StudioProjects/436labs/PetAdoption/PetAdoption",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.17",
-    "project.structure.side.proportion": "0.2"
+    "last_opened_file_path": "C:/Users/stupi/StudioProjects/436labs/PetAdoption"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="Pet_Adoption.app" />
+      <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="ALLOW_ASSUME_VERIFIED" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="597d4f69-ced2-4953-9dbc-ef161fdb1891" name="Changes" comment="" />
-      <created>1739020360488</created>
+      <changelist id="2ac3904e-0961-44d0-a13a-988677b15045" name="Changes" comment="" />
+      <created>1739022610376</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1739020360488</updated>
+      <updated>1739022610376</updated>
     </task>
-    <task id="LOCAL-00001" summary="initial commit pet">
-      <option name="closed" value="true" />
-      <created>1739020462710</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1739020462710</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="initial commit pet" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit pet" />
   </component>
 </project>
